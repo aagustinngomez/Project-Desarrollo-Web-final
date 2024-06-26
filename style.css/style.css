@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+} */
+
+*{
+    padding: 0;
+    margin: 00;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+    font-family: 'roboto', sans-serif;
+}
+
+/* header */
+
+
+
+.navbar{
+    position: sticky;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+    display: flex;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    
+    display: flex;
+    margin-left: 25px;
+} 
+
+ .search-box{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+
+}
+
+.search-btn{
+    width: 90px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+.search-box::placeholder{
+    color: a9a9a9;
+}
+
+.nav-items a{
+    display: none; 
+    margin-left: 20px;
+}
+
+.nav-items a img{
+    width: 30px;
+    display: none;
+}
+
+.link-container{
+    width: 100%;
+    display: flex;
+    
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+     opacity: 1;
+}
+
+/* footer */
+
+.footer{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    background-color: rgb(197, 192, 192);
+    padding: 70px 0px ;
+}
+.row{
+    display: flex;
+    flex-wrap: ;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+ font-size: 18px;
+ color: #000000;
+ text-transform: capitalize;
+ margin-bottom: 3px;
+ position: relative;
+}
+
+
+.container{
+    max-width: 1170px;
+
+    margin: auto
+}
+ul{ 
+    list-style: none;
+}
+@media(max-width: 574px)
+  .footer-col{
+    width: 100%;
+  }
+
+
+/* hero section */
+
+.content{
+    padding-top: 90px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/ruedas.jpg');
+    background-size: cover;
+    display: row;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+
+.logos{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.sub-heading{
+    text-align: center;
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+
+
+
+/* product */
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+   
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-decoration: underline
+}
+
+.product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+
+}
+
+.product-card{
+     flex: 0 0 auto;
+     width: 250px;
+     height: 450px;
+     margin-right: 40px;
+    
+}
+
+.product-card-2{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+} 
+
+.product-card-3{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+   
+} 
+
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb{
+    width:  100%;
+    height: 350px;
+    object-fit: cover;
+    
+
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    } 
+.product-card:hover .card-btn{
+    opacity: 1;
+
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.product-short-des{
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price{
+margin-left: 10px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* flechas  */
+.atras-btn, .pasar-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+
+}
+
+.atras-btn{
+    left: 0;
+    transform: rotate(180deg); 
+}
+
+.pasar-btn{
+    right: 0;
+}
+
+.atras-btn img, .pasar-btn img{
+    opacity: 0.2;
+}
+
+.atras-btn:hover img, .pasar-btn:hover img{
+    opacity: 1;
+}
+
+/* Collection  */
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position: relative;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.collection p{
+    position: absolute;
+    top: 40%;
+    left: 40%; 
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+.collection-img{
+    position: absolute;
+    top: 40%;
+    left: 40%; 
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* quienes somos
+ */
+ .quienes-somos{
+     margin: 50px 50px;
+     padding: 10px;
+     height: 10px;
+     text-transform: uppercase;
+     flex-wrap: wrap;
+    }
+.parrafo-quienes{
+    padding: 20px 0px;
+    margin: 20px 20px;
+}
+
+.button-mejores{
+    margin: 50px 50px;
+    padding: 10px;
+    height: 50px;
+    
+}
+
+/* formulario */
+
+
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    box-sazing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.contacto-h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    
+
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+/* politica de privacidad */
+.pp{
+    margin: 20px 20px;
+    height: 10px;
+    text-align: center;
+
+}
+
+.p-politica{
+    margin: 20px 20px;
+}
+
+/* politica de cookies */
+.p-c{
+    margin: 20px 20px;
+    height: 10px;
+    text-align: center;
+} 
+
+.parrafo-coockies {
+    margin: 20px 20px;
+}
+
+@media screen and (min-width: 700px){
+
+    /* header */
+
+    .nav-items a{
+        margin-left: 20px;
+        display: block;
+    }
+    
+    .nav-items a img{
+        width: 30px;
+        display: block;
+
+    }
+
+
+    
+    /* Producto */
+
+    .product-container{
+        padding: 0 10vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        
+    }
+   
+}
+
+@media screen and (min-width: 1204px){
+    .search{
+        width: 500px;
+        display: flex;
+        margin-left: 25px;
+    } 
+}
