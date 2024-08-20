@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Quienes somos</title>
+    <link rel="stylesheet" href="/style.css/singup.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>productos</title>
 </head>
+
 <body>
+
     <header>
         <div class="nav">
             <img src="../img/logo.png" class="logo" alt="Brand Logo">
@@ -32,18 +37,33 @@
             <p class="sub-heading">Next Level</p>
         </div>
     </header>
+    <br><br>
 
-    <h1 class="quienes-somos">
-        ¿Quiénes somos?
-    </h1>
-    <br>
-    <p class="parrafo-quienes">
-        Crossfit MOST es una empresa que busca satisfacer a nuestros clientes con los mejores productos para practicar Crossfit y así puedas llegar atu mejor nivel.
-    </p>
-    <button class="button-mejores">
-        <a href="../pages/productos.html">Mejores Productos</a> 
-    
-    </button>
+    <main>
+        <section class="signup-section">
+            <h1 class="signup-heading">Create an Account</h1>
+            <p class="signup-description">Fill out the form below to create your account.</p>
+            <div class="signup-container">
+                <form class="signup-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <br> <br>
     <footer>
         <div class="footer-content">
             <img src="/img/logoblancologo.png" class="logo" alt="">
@@ -58,7 +78,7 @@
                     <li><a href="#" class="footer-link">Shorts</a></li>
                     <li><a href="#" class="footer-link">accessories</a></li>
                     <li><a href="#" class="footer-link">Socks</a></li>
-                 
+
                 </ul>
                 <ul class="category">
                     <li class="category-title">women</li>
@@ -71,7 +91,7 @@
                     <li><a href="#" class="footer-link">accessories</a></li>
                     <li><a href="#" class="footer-link">Socks</a></li>
 
-                    
+
                 </ul>
             </div>
         </div>
@@ -91,6 +111,9 @@
         <p class="footer-credit">2024 MOST - Todos los derechos reservados</p>
         </div>
     </footer>
-    
+    </div>
+    <br><br>
+
 </body>
+
 </html>

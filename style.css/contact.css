@@ -1,0 +1,90 @@
+
+.content-product{
+    grid-area: productos;
+    padding-top: 90px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/sub.jpg');
+    background-size: cover;
+    display: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #383838;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 10px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+    }
+}

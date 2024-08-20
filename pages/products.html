@@ -11,35 +11,34 @@
 </head>
 <body>
 
-         <header>
-            <div class="nav">
-                <img src="../img/logo.png" class="logo" alt="">
-                <div class="nav-items">
-                    <div class="search">
-                        <input type="text" class="search-box" placeholder="productos">
-                        <button class="search-btn"> Buscar </button>
-                    </div>
-                    <a href="#"><img src="../img/user.png" alt=""></a>
-                    <a href="#"><img src="../img/cart.png" alt=""></a>
+    <header>
+        <div class="nav">
+            <img src="../img/logo.png" class="logo" alt="Brand Logo">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="Products" aria-label="Search products">
+                    <button class="search-btn">Search</button>
                 </div>
+                <a href="#" aria-label="User Profile"><img src="../img/user.png" alt="User Profile"></a>
+                <a href="#" aria-label="Shopping Cart"><img src="../img/cart.png" alt="Shopping Cart"></a>
             </div>
-                <ul class="link-container">
-                    <li class="link-item "> <a href="/index.html" class="link">Home</a></li>
-                    <li class="link-item "> <a href="/pages/productos.html"     class="link">Poductos</a></li>
-                    <li class="link-item "> <a href="/pages/tendencias.html" class="link">Tendecia</a></li>
-                    <li class="link-item "> <a href="/pages/Contacto.html"     class="link">Contacto</a></li>
-                </ul>
-                <div class="content-product">
-                    <img src="../img/logoblanco.png" class="logos" alt="Logo de la marca">
-                    <p class="sub-heading"> Todos Los productos
-                    </p>
-                </div>
-       
+        </div>
+        <ul class="link-container">
+            <li class="link-item"><a href="/index.html" class="link">Home</a></li>
+            <li class="link-item"><a href="/pages/products.html" class="link">Products</a></li>
+            <li class="link-item"><a href="/pages/trends.html" class="link">Trends</a></li>
+            <li class="link-item"><a href="/pages/contact.html" class="link">Contact</a></li>
+        </ul>
+        <div class="content">
+            <img src="../img/logoblanco.png" class="logos" alt="Brand Logo">
+            <p class="sub-heading">Next Level</p>
+        </div>
     </header>
   
 
     <section class="product">
         <div class="product-category-container">
+            <button class="category-button active">Men</button>
             <button class="category-button active">Women</button>
             <button class="category-button">Trends</button>
             <button class="category-button">Offers</button>
@@ -60,7 +59,33 @@
                     <span class="actual-price">$3570</span>
                 </div>
             </div>
-            <!-- Repeat product-card for more products -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="../img/nobull2.png" class="product-thumb" alt="Product">
+                    <button class="card-btn">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Shirt</h2>
+                    <p class="product-short-des">Gray nobull shirt...</p>
+                    <span class="price">$3200</span>
+                    <span class="actual-price">$3570</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="../img/nobull2.png" class="product-thumb" alt="Product">
+                    <button class="card-btn">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Shirt</h2>
+                    <p class="product-short-des">Gray nobull shirt...</p>
+                    <span class="price">$3200</span>
+                    <span class="actual-price">$3570</span>
+                </div>
+            </div>
+
         </div>
     </section>
     
